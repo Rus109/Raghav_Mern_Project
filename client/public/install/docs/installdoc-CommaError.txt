@@ -1,0 +1,58 @@
+i am having an issue with the comma, i am pushing multiple objects inside an array and those objects are automatically being separated by a comma. The commas are being displayed in a my output.
+
+i tried .join, .slice but it dosen't work maybe im placing it at the wrong place.
+
+This is my function from where tabe Row is being created.
+
+  
+
+    onEnterData(e){
+      e.preventDefault();
+    
+      var random = Math.random();
+      var tempRandom = "";
+      var tempOem = ""; 
+      var tempProductcategoryid = ""; 
+      var tempProductsubcategoryid = "";
+      var tempModelno = "";
+      var tempOemwarrantydatefrom = "";
+      var tempOemwarrantydateto = "";
+      var tempWarrantydatefrom = "";
+      var tempWarrantydateto = "";
+      var tempSerialno = ""
+    
+      var obj = {
+        tempRandom: random.toString(),
+        tempOem: this.state.oem, 
+        tempProductcategoryid: this.state.productcategoryid, 
+        tempProductsubcategoryid: this.state.productsubcategoryid,
+        tempModelno: this.state.modelno,
+        tempOemwarrantydatefrom: this.state.oemwarrantydatefrom,
+        tempOemwarrantydateto: this.state.oemwarrantydateto,
+        tempWarrantydatefrom: this.state.warrantydatefrom,
+        tempWarrantydateto: this.state.warrantydateto,
+        tempSerialno: this.state.serialno
+      }
+    
+      listArray.push(obj);
+      console.log(listArray)
+    
+      for (var i = 0; i< listArray.length; i++){
+        const listMap = listArray.map((item) => {
+          var tableData = "<tr><td>" + item.tempOem.toString() + 
+          "</td><td>" + item.tempProductcategoryid.toString() + "</td><td>" + item.tempProductsubcategoryid.toString() + 
+          "</td><td>" + item.tempModelno.toString() + "</td><td>" + item.tempOemwarrantydatefrom.toString() + 
+          "</td><td>" + item.tempOemwarrantydateto.toString() + "</td><td>" + item.tempWarrantydatefrom.toString() + 
+          "</td><td>" + item.tempWarrantydateto.toString() + "</td><td>" + item.tempSerialno.toString() + "</td><td><input type='button' value='delete' onClick={" + this.onDelete + "}/></td></tr>";
+    
+       return tableData
+        })
+        document.getElementById("tableProreg").innerHTML = listMap
+        ; 
+      }
+      console.log(listMap);
+
+}[![enter image description here][1]][1]
+
+
+  [1]: https://i.stack.imgur.com/mOdj2.png

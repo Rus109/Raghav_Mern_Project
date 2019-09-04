@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Segoe UI Light;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+.landing {
+  position: relative;
+  background: url("./img//last.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color:black;
+}
+.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  color:black;
+  color:black;
+  font-size: 20px;
+}
+.card {
+  box-shadow: 5px 5px 5px 5px grey;
+}
+.card-header,
+.card-footer {
+  background-color: #145996;
+}
+.btn-success{
+  background-color:#3fc380
+}
+
+#css-serial {
+  counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+
+#css-serial tr td:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number) ".";  /* Display the counter */
+}

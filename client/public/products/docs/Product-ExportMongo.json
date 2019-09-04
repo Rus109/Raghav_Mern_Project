@@ -1,0 +1,1 @@
+{"_id":{"$oid":"5c4e9370a0ace92f6cfb56d6"},"name":"John Doe","email":"johndoe@gmail.com","avatar":"//www.gravatar.com/avatar/29a1df4646cb3417c19994a59a3e022a?s=200&r=pg&d=mm","password":"$2a$10$PovLzDtJ2Q7i1SbWJS3ffeeeAAkCJF0JJZ00jQvWzVEDSuwiQwZDu","date":{"$date":{"$numberLong":"1548653424622"}},"__v":{"$numberInt":"0"}}

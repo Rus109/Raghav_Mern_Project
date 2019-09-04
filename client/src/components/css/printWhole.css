@@ -1,0 +1,18 @@
+.mt-5, .my-5 {
+  margin-left: -1rem!important;
+}
+.table{
+  padding-right: 200%;
+}
+.custname-input{
+  width: 46%;
+  margin-left: 1rem;
+}
+.custtype-sel{
+  width: 35%;
+  margin-left: 2rem;
+}
+.column-plus {
+  margin-left: 1rem;
+  margin-top: 35px;
+}

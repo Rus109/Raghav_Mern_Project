@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI Light;
+  font-size: 30px;
+}
+.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  color: rgba(0, 0, 0, 0.438);
+}
+.card {
+  box-shadow: 5px 5px 5px 5px grey;
+}
+.card-header,
+.card-footer {
+  background-color: #145996;
+}

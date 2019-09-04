@@ -1,0 +1,29 @@
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      items: [
+            {id: 1, name:'Eggs'},
+            {id: 2, name:'Milk'},
+            {id: 3, name:'Water'},
+            {id: 4, name:'Tea'}
+        ]
+    }
+  }
+  
+  onClick = (id) => {
+    const arrayCopy = this.state.items.filter((item) => item.id !== id);
+    this.setState({items: arrayCopy});
+  }
+  
+  render() {
+    return (
+      <div>
+       {
+         this.state.items.map(({name, id}) => <div key={id} onClick={() => this.onClick(id)}>{name}</div>)
+       }
+      </div>
+    );
+}}
+
+ReactDOM.render(<App />, document.getElementById('root'))

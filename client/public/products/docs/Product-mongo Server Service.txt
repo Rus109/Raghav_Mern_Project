@@ -1,0 +1,15 @@
+Create Administrator: in Shell
+	User1
+db.createUser(
+{	user: "admin",
+	pwd: "password",
+
+	roles:[{role: "userAdminAnyDatabase" , db:"admin"}]})
+	User2
+db.createUser(
+{	user: "user1",
+	pwd: "password",
+
+	roles:[{role: "userAdminAnyDatabase" , db:"admin"}]})
+Create mongodb service for server
+mongod --dbpath "C:\data\db" --logpath "C:\Program Files\MongoDB\Server\3.4\bin\mongod.log" --install --serviceName "MongoDB"

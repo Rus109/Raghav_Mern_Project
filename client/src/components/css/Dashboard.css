@@ -1,0 +1,31 @@
+#dashboard{
+  justify-content: center;
+  align-items: center;
+  padding: 20px 200px;
+}
+.profile-action{
+  padding: 10px 350px;
+}
+.creds{
+  padding-left: 20px;
+}
+#delete{
+  margin-left: 300px;
+}
+.flex {
+  display: flex;
+}
+.border{
+  border: 1px solid #6ab04c;
+  width: 250px;
+  border-radius: 5px;
+  border-color: #6ab04c;
+  background-color: #6ab04c;
+}
+.bordercust{
+  border: 1px solid #f9ca24;
+  width: 250px;
+  border-radius: 5px;
+  border-color: #f9ca24;
+  background-color: #f9ca24;
+}

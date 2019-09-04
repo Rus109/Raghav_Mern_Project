@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.link{
+  margin-top: 15px;
+}
+form{
+  margin-top: 15px;
+}
+.line {
+  margin-top: 15px;
+  border-bottom: 1px solid black;
+}
+.row{
+  display: flex;
+}
+#headers{
+ margin-left: 6px;
+ padding-left: 6px;
+}
+.col-xs-1{
+  margin-left: 20px;
+}
+
+.css-serial {
+  counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number);  /* Display the counter */
+}
